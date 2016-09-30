@@ -25,7 +25,7 @@ public class filter_by_dev extends AppCompatActivity{
 
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
-        String filterText = bundle.getString("filter text");
+        final String filterText = bundle.getString("filter text");
 
         mDbHelper = new ReviewDBHelper(this);
         db = mDbHelper.getWritableDatabase();
@@ -42,8 +42,9 @@ public class filter_by_dev extends AppCompatActivity{
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //create intent
-                Intent intent = new Intent(view.getContext(), DetailView.class);
+                Intent intent = new Intent(view.getContext(), filterDetailView.class);
 
+                intent.putExtra("filtered", filterText);
                 //pack in info
                 intent.putExtra("position",position);
 

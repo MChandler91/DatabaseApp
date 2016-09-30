@@ -18,7 +18,8 @@
         <activity android:name=".SummaryView" />
         <activity android:name=".DetailView" />
         <activity android:name=".AddRecord" />
-        <activity android:name=".filter_by_dev"></activity>
+        <activity android:name=".filter_by_dev" />
+        <activity android:name=".filterDetailView"></activity>
     </application>
 
 </manifest>
