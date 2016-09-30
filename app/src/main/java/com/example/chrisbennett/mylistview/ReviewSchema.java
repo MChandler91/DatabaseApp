@@ -15,6 +15,8 @@ public class ReviewSchema {
                     Review._ID + " INTEGER PRIMARY KEY " + COMMA_SEP +
                     Review.COLUMN_NAME_REVIEWER + TEXT_TYPE + COMMA_SEP +
                     Review.COLUMN_NAME_TITLE + TEXT_TYPE + COMMA_SEP +
+                    Review.COLUMN_NAME_DEVELOPER + TEXT_TYPE + COMMA_SEP +
+                    Review.COLUMN_NAME_PUBLISHER + TEXT_TYPE + COMMA_SEP +
                     Review.COLUMN_NAME_RATING + TEXT_TYPE + COMMA_SEP +
                     Review.COLUMN_NAME_REVIEW + TEXT_TYPE + " )";
 
@@ -29,6 +31,8 @@ public class ReviewSchema {
         public static final String TABLE_NAME = "review";
         public static final String COLUMN_NAME_REVIEWER = "reviewer";
         public static final String COLUMN_NAME_TITLE = "title";
+        public static final String COLUMN_NAME_DEVELOPER = "developer";
+        public static final String COLUMN_NAME_PUBLISHER = "publisher";
         public static final String COLUMN_NAME_RATING = "rating";
         public static final String COLUMN_NAME_REVIEW = "review";
     }

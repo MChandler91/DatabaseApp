@@ -14,30 +14,16 @@
         android:layout_height="wrap_content"
         android:id="@+id/txtReviewer"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:hint="Reviewer Name" />
 
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txtTitle"
         android:layout_below="@+id/txtReviewer"
-        android:layout_centerHorizontal="true" />
-
-    <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtRating"
-        android:layout_below="@+id/txtTitle"
-        android:layout_centerHorizontal="true" />
-
-    <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textMultiLine"
-        android:ems="10"
-        android:id="@+id/txtReview"
-        android:layout_below="@+id/txtRating"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:hint="Game Title" />
 
     <Button
         android:layout_width="wrap_content"
@@ -55,5 +41,43 @@
         android:id="@+id/txtSuccess"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/txtDev"
+        android:layout_below="@+id/txtTitle"
+        android:layout_alignParentStart="true"
+        android:hint="Game Developer" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/txtPub"
+        android:layout_below="@+id/txtDev"
+        android:layout_alignParentStart="true"
+        android:hint="Game Publisher" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtRating"
+        android:layout_below="@+id/txtPub"
+        android:layout_alignParentStart="true"
+        android:hint="Rating" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/txtReview"
+        android:layout_below="@+id/txtRating"
+        android:layout_alignParentStart="true"
+        android:hint="Review" />
 
 </RelativeLayout>

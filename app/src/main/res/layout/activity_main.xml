@@ -8,12 +8,17 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.chrisbennett.mylistview.MainActivity"
-    android:background="#e28585">
-
+    android:background="#ffffff">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src = "@drawable/bg1"
+        android:layout_marginTop = "100dp"
+        />
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Splash!"
+        android:text="Game Review Database"
         android:layout_alignParentEnd="true"
         android:fontFamily="Georgia"
         android:textSize="30dp"
@@ -21,22 +26,44 @@
         android:id="@+id/textView" />
 
     <Button
+        android:text="Filter Database"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="View"
-        android:id="@+id/btnView"
-        android:layout_below="@+id/textView"
+        android:id="@+id/filterBtn"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="99dp"
-        android:onClick="viewRecords" />
+        android:onClick="filterResults" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/filterText"
+        android:layout_above="@+id/filterBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:hint="Filter by Developer!" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ADd"
+        android:text="View All Reviews"
+        android:id="@+id/btnView"
+        android:onClick="viewRecords"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add a Review"
         android:id="@+id/btnAdd"
+        android:onClick="addRecord"
         android:layout_below="@+id/btnView"
-        android:layout_alignStart="@+id/btnView"
-        android:layout_marginTop="88dp"
-        android:onClick="addRecord" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
 </RelativeLayout>

@@ -28,11 +28,15 @@ public class AddRecord extends AppCompatActivity {
         ContentValues values = new ContentValues();
         String reviewer = ((TextView) findViewById(R.id.txtReviewer)).getText().toString();
         String title = ((TextView) findViewById(R.id.txtTitle)).getText().toString();
+        String developer = ((TextView) findViewById(R.id.txtDev)).getText().toString();
+        String publisher = ((TextView) findViewById(R.id.txtPub)).getText().toString();
         String rating = ((TextView) findViewById(R.id.txtRating)).getText().toString();
         String review = ((TextView) findViewById(R.id.txtReview)).getText().toString();
 
         values.put(ReviewSchema.Review.COLUMN_NAME_REVIEWER, reviewer);
         values.put(ReviewSchema.Review.COLUMN_NAME_TITLE, title);
+        values.put(ReviewSchema.Review.COLUMN_NAME_DEVELOPER, developer);
+        values.put(ReviewSchema.Review.COLUMN_NAME_PUBLISHER, publisher);
         values.put(ReviewSchema.Review.COLUMN_NAME_RATING, rating);
         values.put(ReviewSchema.Review.COLUMN_NAME_REVIEW, review);
 

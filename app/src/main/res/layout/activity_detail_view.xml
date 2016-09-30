@@ -26,14 +26,28 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/txtRating"
+        android:id="@+id/txtReview"
+        android:layout_below="@+id/txtRating"
+        android:layout_marginTop="103dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPub"
+        android:layout_below="@+id/txtDev"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDev"
         android:layout_below="@+id/txtTitle"
         android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/txtReview"
-        android:layout_below="@+id/txtRating"
-        android:layout_marginTop="103dp" />
+        android:id="@+id/txtRating"
+        android:layout_below="@+id/txtPub"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
